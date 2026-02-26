@@ -1,44 +1,8 @@
+import { useForm } from '@formspree/react'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 
 const Contact = () => {
-  const [localStatus, setLocalStatus] = useState<'idle' | 'encrypting' | 'sent'>(
-    'idle',
-  )
-
-  const isSubmitting = localStatus === 'encrypting'
-
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setLocalStatus('encrypting')
-
-    await new Promise((resolve) => setTimeout(resolve, 350))
-
-    const form = event.currentTarget
-    const formData = new FormData(form)
-
-    const name = String(formData.get('name') ?? '').trim()
-    const email = String(formData.get('email') ?? '').trim()
-    const subjectRaw = String(formData.get('subject') ?? '').trim()
-    const message = String(formData.get('message') ?? '').trim()
-    const subject = subjectRaw ? subjectRaw : 'Portfolio contact'
-
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      '',
-      message,
-    ].join('\n')
-
-    const mailto = `mailto:Nouha.mkhinini@gmail.com?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`
-
-    window.location.href = mailto
-    form.reset()
-    setLocalStatus('sent')
-    setTimeout(() => setLocalStatus('idle'), 1200)
-  }
+  const [state, handleSubmit] = useForm('xlgwzolb')
 
   return (
     <section
@@ -67,7 +31,7 @@ const Contact = () => {
         </motion.div>
 
         <motion.form
-          onSubmit={onSubmit}
+          onSubmit={handleSubmit}
           className="grid gap-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 backdrop-blur md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:p-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -153,48 +117,27 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400/80 bg-cyan-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_0_30px_rgba(0,240,255,0.45)] transition disabled:cursor-not-allowed disabled:border-cyan-400/40 disabled:bg-cyan-500/60"
-                disabled={isSubmitting}
+                disabled={state.submitting}
                 whileHover={
-                  isSubmitting ? undefined : { y: -1, scale: 1.02 }
+                  state.submitting ? undefined : { y: -2, scale: 1.02 }
                 }
-                whileTap={isSubmitting ? undefined : { scale: 0.98 }}
+                whileTap={state.submitting ? undefined : { scale: 0.98 }}
               >
-                <span className="relative inline-flex items-center gap-2">
-                  <span>
-                    {localStatus === 'encrypting'
-                      ? 'Encrypting…'
-                      : localStatus === 'sent'
-                        ? 'Sent securely'
-                        : 'Send encrypted message'}
-                  </span>
-
-                  <span className="relative inline-flex h-4 w-4 items-center justify-center">
-                    {localStatus === 'encrypting' && (
-                      <motion.span
-                        className="absolute inline-block h-4 w-4 rounded-full border-2 border-slate-900 border-t-cyan-900"
-                        animate={{ rotate: 360 }}
-                        transition={{
-                          repeat: Infinity,
-                          ease: 'linear',
-                          duration: 0.7,
-                        }}
-                      />
-                    )}
-                    {localStatus === 'sent' && (
-                      <span className="inline-flex h-3 w-3 items-center justify-center rounded-full bg-emerald-400 text-[0.6rem] text-emerald-950">
-                        ✓
-                      </span>
-                    )}
-                    {localStatus === 'idle' && (
-                      <span className="inline-block h-2 w-2 rounded-full bg-slate-900" />
-                    )}
-                  </span>
-                </span>
+                {state.submitting
+                  ? 'Sending…'
+                  : state.succeeded
+                    ? 'Sent!'
+                    : 'Send message'}
               </motion.button>
 
-              <p className="text-[0.7rem] text-slate-500">
-                No logins required. Your email is composed locally in your client.
-              </p>
+              <div className="space-y-1 text-[0.7rem] text-slate-500">
+                <p>No logins required. Formspree delivers your message by email.</p>
+                {state.succeeded && (
+                  <p className="text-emerald-400">
+                    Message sent successfully — I&apos;ll get back to you soon.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
 
