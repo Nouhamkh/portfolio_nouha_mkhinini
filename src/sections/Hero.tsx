@@ -40,25 +40,24 @@ const Hero = () => {
                   Nouha Mkhinini
                 </h1>
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
-                  Cybersecurity Analyst
+                Cybersecurity Analyst | Network Security & Infrastructure Optimization
                 </p>
               </div>
 
               <p className="mt-4 max-w-xl text-pretty text-sm text-slate-300 sm:text-base">
-                I design and secure systems against modern threats, with a focus on{' '}
+               Master’s in Cybersecurity. Network & IT Instructor. Passionate about{' '}
                 <span className="font-semibold text-cyan-300">
-                  network defense
+                  secure architectures
                 </span>
                 ,{' '}
                 <span className="font-semibold text-cyan-300">
-                  offensive security
+                  vulnerability assessment
                 </span>{' '}
                 and{' '}
                 <span className="font-semibold text-cyan-300">
-                  threat monitoring
+                  defensive security
                 </span>
-                . Every control is built to be auditable, resilient and aligned with
-                best practices.
+                . 
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">

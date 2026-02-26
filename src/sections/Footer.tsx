@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="text-sm">
             <p className="font-semibold text-slate-100">Nouha Mkhinini</p>
             <p className="text-xs text-slate-400">
-              Cybersecurity Analyst &amp; Security Engineer
+              Cybersecurity Analyst 
             </p>
           </div>
         </div>
@@ -21,30 +21,30 @@ const Footer = () => {
         <div className="grid gap-2 text-xs sm:text-sm sm:text-right">
           <p className="text-slate-300">
             <span className="font-semibold text-slate-100">Location:</span>{' '}
-            <span className="text-slate-400">Your City, Country</span>
+            <span className="text-slate-400">Sousse, Tunisia</span>
           </p>
           <p className="text-slate-300">
             <span className="font-semibold text-slate-100">Mobile:</span>{' '}
-            <span className="text-slate-400">+00 000 000 000</span>
+            <span className="text-slate-400">+216 42 162 641</span>
           </p>
           <p className="text-slate-300">
             <span className="font-semibold text-slate-100">Email:</span>{' '}
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:Nouha.mkhinini@gmail.com"
               className="text-cyan-300 hover:text-cyan-200"
             >
-              youremail@example.com
+              Nouha.mkhinini@gmail.com
             </a>
           </p>
           <p className="text-slate-300">
             <span className="font-semibold text-slate-100">LinkedIn:</span>{' '}
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/nouha-mkhinini"
               target="_blank"
               rel="noreferrer"
               className="break-all text-cyan-300 hover:text-cyan-200"
             >
-              linkedin.com/in/your-profile
+              linkedin.com/in/nouha-mkhinini
             </a>
           </p>
         </div>

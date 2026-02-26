@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const RESUME_URL = '/Nouha_Mkhinini_Resume.pdf'
+const RESUME_URL = '/Nouha Mkhinini - Resume.pdf'
 
 const container = {
   hidden: { opacity: 0 },
@@ -60,25 +60,18 @@ const About = () => {
               >
                 About
               </motion.h2>
-              <motion.h3
-                variants={item}
-                className="mb-8 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl"
-              >
-                Cybersecurity profile
-              </motion.h3>
+              
 
               <div className="space-y-6 text-slate-300">
                 <motion.p
                   variants={item}
                   className="text-pretty text-sm leading-relaxed sm:text-base"
                 >
-                  I am a{' '}
+                  I am a cybersecurity professional with a Master’s degree in{' '}
                   <span className="font-semibold text-cyan-300">
-                    Cybersecurity Analyst
+                    Network Services & Security
                   </span>{' '}
-                  focused on protecting assets through proactive monitoring, incident
-                  response, and security assessments aligned with industry
-                  frameworks.
+                  . I specialize in network defense, secure infrastructure design, and vulnerability assessment.
                 </motion.p>
 
                 <motion.div variants={item} className="space-y-4">
@@ -87,12 +80,11 @@ const About = () => {
                   </h4>
                   <ul className="grid gap-2 sm:grid-cols-2">
                     {[
-                      'Threat detection & response',
-                      'Vulnerability assessment',
-                      'Security monitoring & SIEM',
-                      'Network security analysis',
-                      'Incident handling',
-                      'Security documentation & reporting',
+                      'Network Security & VLAN Architecture',
+                      'Firewall Configuration',
+                      'Monitoring & SIEM Labs',
+                      'Vulnerability Assessment',
+                      'Secure Infrastructure Design',
                     ].map((focus) => (
                       <li key={focus} className="flex items-center gap-2 text-sm">
                         <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
@@ -106,9 +98,7 @@ const About = () => {
                   variants={item}
                   className="text-pretty text-sm leading-relaxed sm:text-base"
                 >
-                  I work with teams to harden defenses, improve visibility, and
-                  ensure controls are measurable and repeatable—so security scales
-                  with the organization.
+                  Beyond technical implementation, I’ve taught network security concepts, guided students through secure architecture design, and implemented infrastructure optimization strategies in production environments. I combine analytical precision with strong communication skills.
                 </motion.p>
 
                 <motion.div variants={item} className="pt-2">

@@ -2,47 +2,48 @@ import { motion } from 'framer-motion'
 
 const categories = [
   {
-    title: 'Network Security',
+    title: 'Security',
     accent: 'cyan',
     skills: [
-      'Firewall & IDS/IPS',
-      'Network segmentation',
-      'VPN & zero trust',
-      'Traffic analysis',
-      'DDoS mitigation',
+      'Network Security',
+      'Vulnerability Assessment',
+      'Threat Analysis',
+      'Firewall Configuration',
+      'Access Control',
     ],
   },
   {
-    title: 'Offensive Security',
-    accent: 'red',
+    title: 'Networking',
+    accent: 'cyan',
     skills: [
-      'Penetration testing',
-      'Vulnerability assessment',
-      'Red team exercises',
-      'Exploit research',
-      'Security tooling (Burp, Nmap, etc.)',
+      'TCP/IP',
+      'VLAN Design',
+      'Subnetting',
+      'Routing & Switching',
+      'Networking tooling (Wireshark, Nmap, etc.)',
     ],
   },
   {
-    title: 'Monitoring & Analysis',
+    title: 'Tools',
     accent: 'cyan',
     skills: [
-      'SIEM & log analysis',
-      'Threat detection (EDR/XDR)',
-      'Incident response',
-      'Malware analysis',
-      'Threat intelligence',
+      'Kali Linux',
+      'Metasploit',
+      'Nmap',
+      'Firewall',
+      'VMware',
+      'Zabbix',
+      'Git',
     ],
   },
   {
-    title: 'Infrastructure',
+    title: 'Programming',
     accent: 'cyan',
     skills: [
-      'Secure configuration',
-      'Patch & hardening',
-      'Cloud security (AWS/Azure)',
-      'Container & orchestration',
-      'Identity & access (IAM)',
+      'Python',
+      'Bash',
+      'Javascript',
+      'Basic Scripting',
     ],
   },
 ] as const
@@ -83,8 +84,8 @@ const Skills = () => {
             >
               <h3
                 className={`mb-4 text-sm font-semibold uppercase tracking-wider ${
-                  category.accent === 'red'
-                    ? 'text-[#FF3B3B]'
+                  category.accent === 'cyan'
+                    ? 'text-cyan-400'
                     : 'text-cyan-400'
                 }`}
               >
@@ -98,7 +99,7 @@ const Skills = () => {
                   >
                     <span
                       className={`h-1 w-1 flex-shrink-0 rounded-full ${
-                        category.accent === 'red' ? 'bg-[#FF3B3B]' : 'bg-cyan-400'
+                        category.accent === 'cyan' ? 'bg-cyan-400' : 'bg-cyan-400'
                       }`}
                     />
                     {skill}
