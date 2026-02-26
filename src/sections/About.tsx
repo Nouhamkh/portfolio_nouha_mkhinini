@@ -38,9 +38,9 @@ const About = () => {
             <div className="relative overflow-hidden rounded-xl border border-slate-800/80 bg-slate-900/60 shadow-[0_0_60px_rgba(0,240,255,0.08)]">
               <div className="absolute inset-0 rounded-xl border border-cyan-500/20" />
               <img
-                src="/images/about.jpg"
+                src="/images/about.png"
                 alt="Nouha Mkhinini — Cybersecurity Analyst"
-                className="aspect-[4/3] w-full max-w-md object-cover"
+                className="w-full max-w-sm object-contain"
               />
             </div>
           </motion.div>
