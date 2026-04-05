@@ -24,10 +24,6 @@ const Footer = () => {
             <span className="text-slate-400">Sousse, Tunisia</span>
           </p>
           <p className="text-slate-300">
-            <span className="font-semibold text-slate-100">Mobile:</span>{' '}
-            <span className="text-slate-400">+216 42 162 641</span>
-          </p>
-          <p className="text-slate-300">
             <span className="font-semibold text-slate-100">Email:</span>{' '}
             <a
               href="mailto:Nouha.mkhinini@gmail.com"
