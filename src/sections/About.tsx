@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const RESUME_URL = '/Nouha Mkhinini - Resume.pdf'
+const RESUME_URL = '/Nouha-Mkhinini-Resume.pdf'
 
 const container = {
   hidden: { opacity: 0 },
