@@ -2,48 +2,49 @@ import { motion } from 'framer-motion'
 
 const categories = [
   {
-    title: 'Security',
+    title: 'Detection & Monitoring',
+    accent: 'cyan',
+    skills: [
+      'SIEM Monitoring',
+      'Log Analysis',
+      'Threat Detection',
+      'Sigma Rules',
+      'MITRE ATT&CK',
+    ],
+  },
+  {
+    title: 'Incident Response',
+    accent: 'cyan',
+    skills: [
+      'IOC Analysis',
+      'Alert Triage',
+      'Attack Timeline Reconstruction',
+      'Memory Forensics (WinPmem)',
+      'Containment & Remediation',
+    ],
+  },
+  {
+    title: 'Network & Infrastructure Security',
     accent: 'cyan',
     skills: [
       'Network Security',
-      'Vulnerability Assessment',
-      'Threat Analysis',
       'Firewall Configuration',
-      'Access Control',
+      'VLAN Segmentation',
+      'VPN Configuration',
+      'Active Directory Basics',
     ],
   },
   {
-    title: 'Networking',
+    title: 'Tools & Scripting',
     accent: 'cyan',
     skills: [
-      'TCP/IP',
-      'VLAN Design',
-      'Subnetting',
-      'Routing & Switching',
-      'Networking tooling (Wireshark, Nmap, etc.)',
-    ],
-  },
-  {
-    title: 'Tools',
-    accent: 'cyan',
-    skills: [
+      'Wazuh',
+      'Splunk',
+      'Security Onion',
+      'Suricata',
       'Kali Linux',
-      'Metasploit',
-      'Nmap',
-      'Firewall',
-      'VMware',
-      'Zabbix',
-      'Git',
-    ],
-  },
-  {
-    title: 'Programming',
-    accent: 'cyan',
-    skills: [
       'Python',
       'Bash',
-      'Javascript',
-      'Basic Scripting',
     ],
   },
 ] as const
@@ -82,13 +83,7 @@ const Skills = () => {
               key={category.title}
               className="rounded-xl border border-slate-800/80 bg-slate-900/40 p-6 backdrop-blur-sm transition hover:border-slate-700/80"
             >
-              <h3
-                className={`mb-4 text-sm font-semibold uppercase tracking-wider ${
-                  category.accent === 'cyan'
-                    ? 'text-cyan-400'
-                    : 'text-cyan-400'
-                }`}
-              >
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-cyan-400">
                 {category.title}
               </h3>
               <ul className="space-y-2">
@@ -97,11 +92,7 @@ const Skills = () => {
                     key={skill}
                     className="flex items-center gap-2 text-sm text-slate-300"
                   >
-                    <span
-                      className={`h-1 w-1 flex-shrink-0 rounded-full ${
-                        category.accent === 'cyan' ? 'bg-cyan-400' : 'bg-cyan-400'
-                      }`}
-                    />
+                    <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
                     {skill}
                   </li>
                 ))}

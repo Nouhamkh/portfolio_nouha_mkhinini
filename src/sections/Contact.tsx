@@ -24,10 +24,9 @@ const Contact = () => {
             Let&apos;s talk security
           </h2>
           <p className="mt-3 text-sm text-slate-300 sm:text-base">
-            Use this form to reach out about security projects, collaboration, or
-            analyst roles. Messages open in your email client, addressed to
-            Nouha.mkhinini@gmail.com.
-          </p>
+        Use this form to reach out about cybersecurity projects, collaboration, or
+        SOC / analyst opportunities. Messages are delivered directly to my email.
+      </p>
         </motion.div>
 
         <motion.form
@@ -143,25 +142,24 @@ const Contact = () => {
 
           <div className="space-y-4 rounded-xl border border-slate-800/80 bg-slate-950/40 p-4 text-xs text-slate-300">
             <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
-              Signal of interest
+              Security Notes
             </h3>
             <p>
-              This form is intentionally minimal to reduce data exposure. Feel free
-              to omit sensitive details and move deeper discussion to a secure
-              channel.
+              This form is designed to keep communication simple and secure. Please avoid
+              sharing sensitive information in your initial message.
             </p>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
-                No external form backend or server code required.
+                Best for project discussions and collaboration.
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
-                No API keys or secrets in the browser.
+                Suitable for SOC / cybersecurity opportunities.
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
-                Sends to Nouha.mkhinini@gmail.com.
+                Messages are sent directly to my email.
               </li>
             </ul>
           </div>

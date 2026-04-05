@@ -58,20 +58,25 @@ const About = () => {
                 variants={item}
                 className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400"
               >
-                About
+                About me
               </motion.h2>
-              
 
               <div className="space-y-6 text-slate-300">
                 <motion.p
                   variants={item}
                   className="text-pretty text-sm leading-relaxed sm:text-base"
                 >
-                  I am a cybersecurity professional with a Master’s degree in{' '}
+                  I am a{' '}
+                  <span className="font-semibold text-cyan-300">
+                    cybersecurity analyst
+                  </span>{' '}
+                  with a Master’s degree in{' '}
                   <span className="font-semibold text-cyan-300">
                     Network Services & Security
-                  </span>{' '}
-                  . I specialize in network defense, secure infrastructure design, and vulnerability assessment.
+                  </span>
+                  , specializing in threat detection, SIEM monitoring, and incident
+                  response. I build hands-on labs simulating real-world attacks using
+                  MITRE ATT&CK to strengthen detection and analysis capabilities.
                 </motion.p>
 
                 <motion.div variants={item} className="space-y-4">
@@ -80,11 +85,11 @@ const About = () => {
                   </h4>
                   <ul className="grid gap-2 sm:grid-cols-2">
                     {[
-                      'Network Security & VLAN Architecture',
-                      'Firewall Configuration',
-                      'Monitoring & SIEM Labs',
-                      'Vulnerability Assessment',
-                      'Secure Infrastructure Design',
+                      'SIEM Monitoring & Log Analysis',
+                      'Threat Detection & Incident Response',
+                      'Detection Engineering (Sigma, MITRE ATT&CK)',
+                      'Network Security & Segmentation',
+                      'Security Monitoring (Wazuh, Suricata, Security Onion)',
                     ].map((focus) => (
                       <li key={focus} className="flex items-center gap-2 text-sm">
                         <span className="h-1 w-1 flex-shrink-0 rounded-full bg-cyan-400" />
@@ -98,7 +103,11 @@ const About = () => {
                   variants={item}
                   className="text-pretty text-sm leading-relaxed sm:text-base"
                 >
-                  Beyond technical implementation, I’ve taught network security concepts, guided students through secure architecture design, and implemented infrastructure optimization strategies in production environments. I combine analytical precision with strong communication skills.
+                  Beyond technical implementation, I’ve taught network security
+                  concepts and guided students through secure architecture design. I
+                  combine hands-on detection experience with strong analytical and
+                  communication skills, bridging the gap between offensive and
+                  defensive security.
                 </motion.p>
 
                 <motion.div variants={item} className="pt-2">

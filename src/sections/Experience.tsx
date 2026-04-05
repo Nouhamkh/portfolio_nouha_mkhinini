@@ -3,27 +3,27 @@ import { motion } from 'framer-motion'
 const experiences = [
   {
     id: '1',
-    period: '2023 – Present',
-    role: 'Cybersecurity Analyst',
-    company: 'Company Name',
+    period: 'Oct 2025 – Jan 2026',
+    role: 'Information Technology Instructor',
+    company: 'IMSET Tunisie · Full-time · Sousse, Tunisia',
     description:
-      'Threat monitoring, incident response, and security assessments. SIEM tuning and detection rule development.',
+      'Delivered training on network administration fundamentals to second-year students (BTP TSIG). Covered network design, protocols and architecture (OSI/TCP-IP), subnetting (CIDR, VLSM), IP addressing, and core protocols (ARP, ICMP, DHCP, DNS, HTTP). Facilitated hands-on labs using Cisco Packet Tracer, designed exams and evaluation rubrics, and created structured course materials.',
   },
   {
     id: '2',
-    period: '2021 – 2023',
-    role: 'Security Operations Analyst',
-    company: 'Previous Company',
+    period: 'Feb 2025 – May 2025',
+    role: 'Cybersecurity Intern',
+    company: 'Vision Age VFX · Internship · Sousse, Tunisia',
     description:
-      'Security monitoring, vulnerability management, and support for penetration testing and compliance activities.',
+      'Analyzed and redesigned VLAN segmentation per department. Provisioned secured workstations with VPN and RDP access, configured RAID-5 storage on NAS, and deployed a ticketing system on Ubuntu Server (VMware ESXi). Developed a desktop automation tool for file sorting, OCR, and watermarking. Documented security policies aligned with TPN+ content protection standards and participated in vulnerability assessments.',
   },
   {
     id: '3',
-    period: '2019 – 2021',
-    role: 'IT Security Intern / Junior Analyst',
-    company: 'Earlier Role',
+    period: 'Feb 2023 – May 2023',
+    role: 'Student Intern',
+    company: 'LEONI Tunisia · Internship · Sousse, Tunisia',
     description:
-      'Log analysis, alert triage, and documentation. Assisted with security tooling and baseline hardening.',
+      'Developed an IoT system and mobile application for real-time monitoring of server rooms. Collected environmental data including temperature, humidity, gas level, and sound level. Built a user-friendly admin interface with threshold-based alerting.',
   },
 ]
 

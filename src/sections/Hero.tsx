@@ -40,24 +40,23 @@ const Hero = () => {
                   Nouha Mkhinini
                 </h1>
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
-                Cybersecurity Analyst | Network Security & Infrastructure Optimization
-                </p>
+                SOC Analyst | Detection Engineering | SIEM & Threat Monitoring                </p>
               </div>
 
               <p className="mt-4 max-w-xl text-pretty text-sm text-slate-300 sm:text-base">
-               Master’s in Cybersecurity. Network & IT Instructor. Passionate about{' '}
+                Master’s in Cybersecurity. Hands-on experience in{' '}
                 <span className="font-semibold text-cyan-300">
-                  secure architectures
+                  SIEM monitoring
                 </span>
                 ,{' '}
                 <span className="font-semibold text-cyan-300">
-                  vulnerability assessment
+                  threat detection
                 </span>{' '}
                 and{' '}
                 <span className="font-semibold text-cyan-300">
-                  defensive security
+                  incident response
                 </span>
-                . 
+                . Experienced with MITRE ATT&CK, Wazuh, and Splunk.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">

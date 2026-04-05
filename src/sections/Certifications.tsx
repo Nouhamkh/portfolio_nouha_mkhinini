@@ -12,19 +12,19 @@ const certs = [
   },
   {
     id: '2',
-    name: 'ISC2 Certified in Cybersecurity (CC)',
-    level: 'Entry-level',
-    status: 'Planned / In progress',
-    focus: ['Security principles', 'Access control', 'Security operations'],
-    proofImage: '/images/certifications/isc2-cc.png',
+    name: 'Cisco CyberOps Associate',
+    level: 'Security Operations',
+    status: 'Completed',
+    focus: ['SOC operations', 'Threat monitoring', 'Incident response basics'],
+    proofImage: '/images/certifications/cyberops.jpg',
   },
   {
     id: '3',
-    name: 'Offensive Security (OSCP or similar)',
-    level: 'Offensive / hands‑on',
-    status: 'Target',
-    focus: ['Penetration testing', 'Exploit development', 'Reporting'],
-    proofImage: '/images/certifications/oscp.png',
+    name: 'CCNAv7: Switching, Routing, and Wireless Essentials',
+    level: 'Networking fundamentals',
+    status: 'Completed',
+    focus: ['Routing & switching', 'Network fundamentals', 'Wireless networking'],
+    proofImage: '/images/certifications/ccna.jpg',
   },
 ] as const
 
@@ -92,7 +92,7 @@ const Certifications = () => {
               </ul>
 
               <p className="mt-auto text-[0.7rem] text-slate-500">
-                Click to view or add proof for this certification.
+                Click to view proof for this certification.
               </p>
             </article>
           ))}
