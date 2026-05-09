@@ -6,9 +6,9 @@ const certs = [
     id: '1',
     name: 'CompTIA Security+',
     level: 'Core security fundamentals',
-    status: 'Planned / In progress',
+    status: 'Completed',
     focus: ['Network security', 'Threats & vulnerabilities', 'SecOps basics'],
-    proofImage: '/images/certifications/security-plus.png',
+    proofImage: '/images/certifications/comptia.jpg',
   },
   {
     id: '2',

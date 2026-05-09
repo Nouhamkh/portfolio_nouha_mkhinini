@@ -5,20 +5,12 @@ const experiences = [
     id: '0',
     period: 'Mar 2025 – Present',
     role: 'IT Network & Security Administrator',
-    company: 'DI VISTA DESIGNE · Sousse, Tunisia',
+    company: 'DI VISTA DESIGN · Sousse, Tunisia',
     description:
       '• Managed and supported IT infrastructure across 50+ endpoints and Point of Sale (POS) systems, ensuring reliable operations and rapid incident resolution.\n• Monitored and maintained LAN/Wi-Fi networks, achieving 99%+ uptime and minimizing service disruptions.\n• Implemented security best practices including patch management, backups, and access control, reducing security risks by ~30%.\n• Performed preventive maintenance and system hardening, identifying and resolving 20+ issues while improving documentation and operational efficiency.\n• Gained hands-on experience in security operations, incident response, and endpoint monitoring.',
   },
   {
     id: '1',
-    period: 'Oct 2025 – Jan 2026',
-    role: 'Information Technology Instructor',
-    company: 'IMSET Tunisie · Full-time · Sousse, Tunisia',
-    description:
-      '• Delivered training on network administration and cybersecurity fundamentals to 30+ students, covering secure network design and protocols (OSI/TCP-IP).\n• Taught core networking and security concepts including VLANs, subnetting, and common protocols (ARP, ICMP, DHCP, DNS, HTTP).\n• Facilitated hands-on labs using Cisco Packet Tracer, simulating real-world network and security scenarios.\n• Designed course materials, labs, and evaluations aligned with industry networking and cybersecurity standards.',
-  },
-  {
-    id: '2',
     period: 'Feb 2025 – May 2025',
     role: 'Cybersecurity Intern',
     company: 'Vision Age VFX · Internship · Sousse, Tunisia',
@@ -26,7 +18,7 @@ const experiences = [
       '• Analyzed and redesigned VLAN segmentation per department.\n• Provisioned secured workstations with VPN and RDP access, configured RAID-5 storage on NAS, and deployed a ticketing system on Ubuntu Server (VMware ESXi).\n• Developed a desktop automation tool for file sorting, OCR, and watermarking.\n• Documented security policies aligned with TPN+ content protection standards and participated in vulnerability assessments.',
   },
   {
-    id: '3',
+    id: '2',
     period: 'Feb 2023 – May 2023',
     role: 'Student Intern',
     company: 'LEONI Tunisia · Internship · Sousse, Tunisia',
